@@ -1,5 +1,5 @@
 /**
- * Created by gmh148 on 4/24/16.
+ * Created by Alberto Nieto on 4/24/16.
  */
 $(function(){
     // Declare variable for the current image
@@ -21,6 +21,10 @@ $(function(){
         // Grab the clicked image source and element id
         var src = $(this).attr("src");
         var id = $(this).attr("id");
+        // var imgHeight = $("#main").height();
+        // var imgWidth = $("#main").width();
+        var imgHeight = $(this).naturalHeight;
+        var imgWidth = $(this).naturalWidth;
         // Set the variable for the current image to the parent element
         current_li = $(this).parent();
         // Call the setImg function
@@ -28,6 +32,54 @@ $(function(){
         // Now we want the frame and overlay to appear
         $("#frame").fadeIn();
         $("#overlay").fadeIn();
+
+        // Change the frame size based on the image size
+        // $("#frame").height(src.height);
+        // $("#frame").width(src.width);
+
+        // Change position of left and right arrows to follow frame
+        // $("#left").css("float", "left");
+        // $("#right").css("float", "right");
+
+        var $frame = jQuery('#frame'),
+            framePosition = $frame.position();
+            // $tooltip = $('<div id="tooltip">A new element</div>').insertAfter($foo);
+        
+        // $("#frame").css("height", imgHeight);
+        // $("#frame").css("width", imgWidth);
+
+        // var marginTop = imgHeight/2;
+        // var marginLeft = imgWidth/2;
+        // $("#frame").css("margin-top", "-"+marginTop+"px");
+        // $("#frame").css("margin-left", "-"+marginLeft+"px");
+         
+        // $frame.css({
+        //     height : src.height,
+        //     width : src.width,
+        //     margin-top : -(src.height / 2),
+        //     margin-left : -(src.widgth / 2)
+        // });    
+            
+
+        var $left = jQuery('#left');            
+
+        $left.css({
+            position : 'absolute',
+            top : framePosition.top - $frame.height/2,
+            // left : framePosition.left - src.width/2
+            left : 0
+            // width : $foo.width() - 20
+        });
+
+        var $right = jQuery('#right');            
+
+        $right.css({
+            position : 'absolute',
+            top : framePosition.top - $frame.height/2,
+            // right : framePosition.left + src.width
+            right : 0
+            // width : $foo.width() - 20
+        });
     });
 
     // Logic to handle clicking of opaque overlay

@@ -9,17 +9,19 @@
     <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
+
+<!-- Opaque overlay for image browser -->
+<div id="overlay"></div>
+
+<!-- Banner -->
 <div id="header">
     <div id="menu">
         <h2 style="margin: 0px;">Alberto Nieto, GIS Developer</h2>
     </div>
-
 </div>
 
-<div id="overlay"></div>
-
+<!-- Frame for image browser -->
 <div id="frame">
-
     <table id="frame-table">
         <tr>
             <td id="left">
@@ -33,9 +35,31 @@
     <img id="main" src="" alt=""/>
 </div>
 
+<!-- Summary Header -->
+<div id="summary" class="narrative">
+    <h2>Summary</h2>
+        <p>Expertise in front-end and back-end development and GIS analysis powers high-quality results. Nine years of GIS experience in GIS Development and Analysis bring the ability to adapt to any work environment while maintaining deliverables that surpass customer expectations.</p>
+</div>
+
+<div id="summary" class="narrative">
+    <h2>Sample Work</h2>
+        <a href="http://www.usda.gov/oce/weather/pubs/Weekly/Wwcb/wwcb.pdf"> USDA/NOAA - Joint Agricultural Weather Facility</a>
+</div>
+
 <div id="wrapper">
     <ul id="portfolio">
-        <li><img src="images/Aerial01.jpg" alt="img"/></li>
+        <li><img src="http://www.cpc.ncep.noaa.gov/products/analysis_monitoring/regional_monitoring/cltrain.png" alt="img"/></li>
+        <li><img src="http://www.cpc.ncep.noaa.gov/products/analysis_monitoring/regional_monitoring/clravt.png" alt="img"/></li>        
+        <li><img src="http://www.cpc.ncep.noaa.gov/products/analysis_monitoring/regional_monitoring/clrtanom.png" alt="img"/></li>
+        <li><img src="http://www.cpc.ncep.noaa.gov/products/analysis_monitoring/regional_monitoring/1cpcp0.png" alt="img"/></li>
+
+        <li><img src="http://www.cpc.ncep.noaa.gov/products/analysis_monitoring/regional_monitoring/wcmax15.png" alt="img"/></li>
+        <li><img src="http://www.cpc.ncep.noaa.gov/products/analysis_monitoring/regional_monitoring/wctan8.png" alt="img"/></li>
+        <li><img src="http://www.cpc.ncep.noaa.gov/products/analysis_monitoring/regional_monitoring/wctan1.png" alt="img"/></li>
+        <li><img src="http://www.cpc.ncep.noaa.gov/products/analysis_monitoring/regional_monitoring/wcpcp7.png" alt="img"/></li>
+        
+
+<!--         <li><img src="images/screen01.png" alt="img"/></li>
         <li><img src="images/Aerial02.jpg" alt="img"/></li>
         <li><img src="images/Aerial03.jpg" alt="img"/></li>
         <li><img src="images/Aerial04.jpg" alt="img"/></li>
@@ -43,7 +67,7 @@
         <li><img src="images/Aerial06.jpg" alt="img"/></li>
         <li><img src="images/Aerial07.jpg" alt="img"/></li>
         <li><img src="images/Aerial08.jpg" alt="img"/></li>
-        <li><img src="images/Aerial09.jpg" alt="img"/></li>
+        <li><img src="images/Aerial09.jpg" alt="img"/></li> -->
 
         <!--<li><img src="images/01.png" alt="img"/></li>-->
         <!--<li><img src="images/02.png" alt="img"/></li>-->
@@ -57,11 +81,9 @@
     </ul>
 </div>
 
-<div id="narrative">
-    <h2>Summary</h2>
-        <p>Expertise in front-end and back-end development and GIS analysis powers high-quality results. Nine years of GIS experience in GIS Development and Analysis bring the ability to adapt to any work environment while maintaining deliverables that surpass customer expectations.</p>
+<div class="narrative">
 
-    <h2>Applicable Skills</h2>
+    <h2 style="margin-top: 30px;">Applicable Skills</h2>
         <ul>
             <li type="square">
             Skilled GIS programmer with experience in configuration management and process engineering.
@@ -80,13 +102,13 @@
             </li>
         </ul>
 
-    <h2>Software Experience</h2>
+    <h2 style="margin-top: 70px;">Software Experience</h2>
     
         <h3>GIS Software Use and Administration:</h3>
         <p>ESRI - ArcGIS for Desktop (ArcMap, ArcGIS Pro, ArcCatalog, License Administrator), ArcGIS for Server (ArcSDE, REST API), Portal for ArcGIS + WebAdaptor, WebAppBuilder, OpenGEO (QGIS, GeoServer, PostGIS), GDAL/OGR, GrADS, ERDAS IMAGINE, Census Proprietary GIS (GATRES).</p>
 
         <h3>Programming/Development:</h3>
-        <p>Python 2.7/3.4 (Standard Library, Anacondas/Pandas/Numpy/iPython, Arcpy, Matplotlib) Javascript(jQuery/Dojo/ArcGISJavascriptAPI/Node.js/Reveal.js),HTML5, CSS, Qt, Linux BASH/CSH, Windows batch programming, GitHub, SQL, VB
+        <p>Python 2.7/3.4 (Standard Library, Anacondas; Pandas; Numpy; iPython, Arcpy, Matplotlib), Javascript (jQuery; Dojo; ArcGIS Javascript API; Node.js; Reveal.js), HTML5, CSS, Qt, Linux BASH/CSH, Windows batch programming, GitHub, SQL, VB
         </p>
 
         <h3>Database Administration:</h3>
@@ -106,7 +128,7 @@
         LIIS, Microsoft Word, Visio, Powerpoint, Excel, Outlook, Access, Filemaker Pro, Flash MX, Adobe Illustrator, Photoshop, Acrobat, HTML, Autodesk Inventor. System administration of Linux, Windows, Mac.
         </p>
 
-    <h2>Professional Experience</h2>
+    <h2 style="margin-top: 70px;">Professional Experience</h2>
 
         <h3>Capital One Financial Corporation – GIS Developer (July 2014 - Present)</h3>
         <h4>Responsibilities</h4>
@@ -288,15 +310,24 @@
             </li>
         </ul>
 
-    <h2>Education and Academic Experience</h2>
+    <h2 style="margin-top: 70px;">Education and Academic Experience</h2>
 
         <h3>University of Florida (August 2005 – August 2009)</h3>
-        <p>Bachelor of Arts - Geography, Concentration: GIS, Remote Sensing, Urban Planning</p>
-        <p>Degree GPA of 3.75; Dean’s List recognition every semester from 2007-2009.</p>
-        <p>Created an award-winning project determining the most advantageous locations for an expansion of the Jacksonville Skyway metrorail using Landsat remotely sensed data and ArcGIS.</p>
-        <p>Designed several economic, demographic, and environmental projects that assisted government decision-making for application of limited resources.</p>
-        <p>Invited to present GIS Development best practices at 2016 Geographic Symposium.</p>
+        <ul>
+            <li type="square">Bachelor of Arts - Geography, Concentration: GIS, Remote Sensing, Urban Planning</li>
+            <li type="square">Degree GPA of 3.75; Dean’s List recognition every semester from 2007-2009.</li>
+            <li type="square">Created an award-winning project determining the most advantageous locations for an expansion of the Jacksonville Skyway metrorail using Landsat remotely sensed data and ArcGIS.</li>
+            <li type="square">Designed several economic, demographic, and environmental projects that assisted government decision-making for application of limited resources.</li>
+            <li type="square">Invited to present GIS Development best practices at 2016 Geographic Symposium.</li>
+        </ul>
 
+    <h2 style="margin-top: 70px;">Relevant Links</h2>
+
+        <a href="http://www.usda.gov/oce/weather/pubs/Weekly/Wwcb/wwcb.pdf"> USDA/NOAA - Joint Agricultural Weather Facility</a>
+
+        <a href="http://www.cpc.ncep.noaa.gov/products/analysis_monitoring/regional_monitoring/"> NOAA Climate Prediction Center - JAWF Regional Monitoring</a>
+
+        <a href="http://www.cpc.ncep.noaa.gov/products/GIS/GIS_DATA/"> NOAA Climate Prediction Center GIS Data</a>        
 
 </div>
 
